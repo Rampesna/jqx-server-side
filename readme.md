@@ -5,6 +5,7 @@ projects. With this integration, users can now seamlessly manage vast datasets a
 the full potential of JqxGrid with our specialized server-side solution.
 
 [![Total Downloads](https://img.shields.io/packagist/dt/rampesna/jqx-server-side.svg)](https://packagist.org/packages/rampesna/jax-server-side)
+![GitHub repo size](https://img.shields.io/github/repo-size/rampesna/jqx-server-side)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
 ## Requirements
