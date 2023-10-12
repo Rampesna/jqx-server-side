@@ -48,6 +48,64 @@ class ExampleController extends Controller
 }
 ```
 
+### View
+
+```
+
+<script>
+
+var source = {
+    datatype: "json",
+    datafields: [
+        {name: 'id', type: 'integer'},
+        // your columns ...
+    ],
+    cache: false,
+    url: 'your_controller_url',
+    beforeSend: function(xhr) {
+        // if you need to send authorization token
+        xhr.setRequestHeader('Authorization', 'Bearer ' + your_token);
+        xhr.setRequestHeader('Accept', 'application/json');
+    },
+    beforeprocessing: function (data) {
+        source.totalrecords = data[0].TotalRows;
+    },
+    root: 'Rows',
+    filter: function () {
+        yourGridDiv.jqxGrid('updatebounddata', 'filter');
+    },
+    sort: function () {
+        yourGridDiv.jqxGrid('updatebounddata');
+    }
+};
+
+var dataAdapter = new $.jqx.dataAdapter(source);
+
+yourGridDiv.jqxGrid({
+    // other options ...
+    source: dataAdapter,
+    filterable: true,
+    showfilterrow: true,
+    pageable: true,
+    sortable: true,
+    virtualmode: true,
+    rendergridrows: function (params) {
+        return params.data;
+    },
+    columns: [
+        {
+            text: '#',
+            dataField: 'id',
+            columntype: 'textbox',
+        },
+        // your columns ...
+    ],
+});
+
+</script>
+
+```
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
