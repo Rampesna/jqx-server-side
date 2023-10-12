@@ -1,0 +1,23 @@
+{
+  "name": "rampesna/jqx-server-side",
+  "description": "JQX Server Side is a PHP library that helps you to create a server side for JQX DataTables.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Talha Can",
+      "email": "rampesna@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "illuminate/database": "^8.0",
+    "illuminate/http": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rampesna\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
