@@ -14,7 +14,7 @@ the full potential of JqxGrid with our specialized server-side solution.
 
 ## Installation
 
-```
+```bash
 composer require rampesna/jqx-server-side
 ```
 
@@ -22,7 +22,8 @@ composer require rampesna/jqx-server-side
 
 ### Controller
 
-```
+```php
+
 use Rampesna\JqxGrid;
 
 class ExampleController extends Controller
@@ -50,7 +51,7 @@ class ExampleController extends Controller
 
 ### View
 
-```
+```javascript
 
 <script>
 
