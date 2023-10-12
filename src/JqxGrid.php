@@ -24,7 +24,7 @@ class JqxGrid
         $this->request = $request;
     }
 
-    public function jqxGrid()
+    public function initialize()
     {
         $pageNum = $this->request->pagenum;
         $pageSize = $this->request->pagesize;
