@@ -52,9 +52,9 @@ class ExampleController extends Controller
 
 ### View
 
-```javascript
+```typescript
 
-<script>
+var yourGridDiv = $('#your-grid-div');
 
 var source = {
     datatype: "json",
@@ -103,8 +103,6 @@ yourGridDiv.jqxGrid({
         // your columns ...
     ],
 });
-
-</script>
 
 ```
 
