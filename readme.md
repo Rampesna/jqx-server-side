@@ -4,6 +4,7 @@ This package has been meticulously designed to optimize JqxGrid for server-side 
 projects. With this integration, users can now seamlessly manage vast datasets and improve overall performance. Harness
 the full potential of JqxGrid with our specialized server-side solution.
 
+[![Total Downloads](https://img.shields.io/packagist/dt/rampesna/jqx-server-side.svg)](https://packagist.org/packages/rampesna/jax-server-side)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
 ## Requirements
